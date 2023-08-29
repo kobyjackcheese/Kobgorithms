@@ -179,29 +179,48 @@
 // }
 // fizzBuzz(15)
 
-function maxProfit(p) {
-    let index = 0
-    let highest = 0
-    let ans = []
-    for (let i = index; i < p.length; i++) {
-        let profit = (p[i] - p[index])
-        console.log(`buying on day ${index + 1} for ${p[index]} and selling on day ${i + 1} for ${p[i]}`)
-        if (index < i) {
-            if (profit > p[index] && profit > highest) {
-                highest = profit
-                ans.push([p[index], index+1, p[i], i+1])
-            }
-        }
-        if (index != p.length && i === p.length - 1) {
-            index = index + 1
-            i = index; continue;
-        }
-    }
-    if (highest){console.log(`you should buy on day ${ans[ans.length-1][1]} for ${ans[ans.length-1][0]} and sell on day ${ans[ans.length-1][3]} for ${ans[ans.length-1][2]} for a profit of ${highest} `)}
-    else {console.log('dont buy, there is no possible profit')}
-}
+// function maxProfit(p) {
+//     let index = 0
+//     let highest = 0
+//     let ans = []
+//     for (let i = index; i < p.length; i++) {
+//         let profit = (p[i] - p[index])
+//         console.log(`buying on day ${index + 1} for ${p[index]} and selling on day ${i + 1} for ${p[i]}`)
+//             if (profit > p[index] && profit > highest) {
+//                 highest = profit
+//                 ans.push([p[index], index+1, p[i], i+1])
+//             }
+//         if (index != p.length && i === p.length - 1) {
+//             index = index + 1
+//             i = index; continue;
+//         }
+//     }
+//     if (highest){console.log(`you should buy on day ${ans[ans.length-1][1]} for ${ans[ans.length-1][0]} and sell on day ${ans[ans.length-1][3]} for ${ans[ans.length-1][2]} for a profit of ${highest} `)}
+//     else {console.log('dont buy, there is no possible profit')}
+// }
 
-maxProfit([7, 1, 5, 3, 6, 4])
-maxProfit([7, 6, 4, 3, 1])
+// maxProfit([7, 1, 5, 3, 6, 4])
+// maxProfit([7, 6, 4, 3, 1])
 // maxProfit([6,1,5,9,2,7,4,1,6,8])
 // maxProfit([])
+
+// function countTriples(num) {
+//     let n = num+1
+//     let index = 1
+//     let nums = []
+//     const square = (n) => n**2;
+//     for (let i = 0; i < n; i++) {
+//        if (i+1 === n){
+//         index = index + 1;
+//         i = -1; continue;
+//        } else if(index === n){break;}
+//        if(Number.isInteger(Math.sqrt(square(index) + square(i+1))) === true && Math.sqrt(square(index) + square(i+1)) <= num){
+//         nums.push(Math.sqrt(square(index) + square(i+1)))
+//        }
+//     }
+//     console.log(nums.length)
+//     return(nums.length)
+// }
+
+// countTriples(12)
+
