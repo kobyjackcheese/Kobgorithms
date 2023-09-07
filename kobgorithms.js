@@ -225,3 +225,26 @@
 // countTriples(12)
 // countTriples(17)
 
+
+//function that takes in your ds3 vitality level and tells you the max light/med/heavy/max load
+// function vitalityInfo(n) {
+//     let equipLoad = n + 40
+//     let lightLoad = equipLoad * .299
+//     let mediumLoad = equipLoad * .699
+//     let heavyLoad = equipLoad * .999
+//     console.log(`your max carry weight is ${equipLoad.toFixed(2)}, max weight for light load is ${lightLoad.toFixed(2)}, max weight for medium load is ${mediumLoad.toFixed(2)}, max weight for heavy load is ${heavyLoad.toFixed(2)}`)
+// }
+// vitalityInfo(30)
+
+//function that takes in ds3 equip load and tells you the required stats to carry at different loads
+// function canICarryIt(n){
+//     let lightLoad = (n / .299).toFixed(0) - 39
+//     let mediumLoad = (n / .699).toFixed(0) - 39
+//     let heavyLoad = (n / .999).toFixed(0) - 39
+//     console.log(`if your equipment load is ${n}, you need ${lightLoad} vitality for light load, ${mediumLoad} for medium load, and ${heavyLoad} for heavy load`)
+// }
+// canICarryIt(55)
+// canICarryIt(30)
+
+
+
