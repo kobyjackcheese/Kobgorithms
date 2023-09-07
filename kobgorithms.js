@@ -223,4 +223,5 @@
 // }
 
 // countTriples(12)
+// countTriples(17)
 
