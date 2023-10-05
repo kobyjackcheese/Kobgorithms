@@ -246,5 +246,65 @@
 // canICarryIt(55)
 // canICarryIt(30)
 
+// function twoSum(arr, targ) {
+//     let index = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         let sum = arr[i] + arr[index]
+//         if (i + 1 === arr.length) {
+//             index = index + 1
+//             i = 0;
+//             continue;
+//         } else if (index > arr.length) { break; }
+//         if (sum === targ) {
+//             console.log([i, index])
+//             break;
+//         }
+//     }
+// }
+
+// twoSum([2, 7, 11, 15], 9)
 
 
+// function singleNum(arr) {
+//     let index = 0
+//     let pairs = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === arr[index] && index != i) {
+//             pairs.push(arr[i])
+//         }
+//         if (i + 1 == arr.length) {
+//             index = index + 1
+//             i = 0
+//             continue;
+//         } else if (index === arr.length) {
+//             break;
+//         }
+//     }
+//     for (let i = 0; i < arr.length; i++){
+//         if (pairs.includes(arr[i]) === false){
+//             console.log(arr[i])
+//         }
+//     }
+// }
+// singleNum([1,2,3,4,5,6,1,2,3,4,5,6,7])
+// singleNum([1,1,2,2,3,3,4,4,5])
+// singleNum([4, 1, 2, 1, 2])
+
+
+function singleNumber(nums) {
+    let index = 0
+    for (let i = 0; i < nums.length; i++) {
+        console.log(`${nums[i]} to ${nums[index]}`)
+        if(nums[i] === nums[index] && i != index){
+            console.log('bruh')
+            i = -1
+            index = index+1
+            continue;
+        }
+        if(i === nums.length-1){
+            console.log(nums[index])
+        }
+    }
+}
+singleNumber([2, 3, 2, 4, 3, 4, 5])
+singleNumber([2, 3, 2, 6, 4, 3, 4, 5, 6, 5 , 7, 8, 8])
